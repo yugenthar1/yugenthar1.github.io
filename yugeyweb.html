@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" href="https://ukyugey.neocities.org/img/sitelogo.PNG">
+    <title>uk_yugey</title>
+    <link REL="icon" href="img/temp.pug">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1E1E1E; /* Dark background color */
+            color: #FFFFFF; /* White text color */
+            font-size: 16px; /* Increased font size for body text */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: #55CC55; /* Light green text color */
+            font-size: 24px; /* Increased font size for header */
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+        .theme {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .theme img {
+            max-width: 100%;
+        }
+
+        .form {
+            background-color: #333;
+            color: #FFFFFF; /* White text color */
+            font-size: 18px; /* Increased font size for form */
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #55CC55; /* Light green text color */
+            padding-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px; /* Increased font size for input fields */
+            border: none;
+            border-bottom: 2px solid #55CC55; /* Light green underline */
+            background-color: transparent;
+            color: #FFFFFF; /* White text color */
+        }
+
+        input[type="text"]::placeholder,
+        input[type="number"]::placeholder {
+            color: #888;
+        }
+
+        input[type="tel"] { /* Style for the contact input field */
+            width: 100%;
+            padding: 10px;
+            font-size: 16px; /* Increased font size for contact input */
+            border: none;
+            border-bottom: 2px solid #55CC55; /* Light green underline */
+            background-color: transparent;
+            color: #FFFFFF; /* White text color */
+        }
+
+        input[type="tel"]::placeholder {
+            color: #888;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px; /* Increased font size for select */
+            border: none;
+            border-bottom: 2px solid #55CC55; /* Light green underline */
+            background-color: transparent;
+            color: #888; /* White text color */
+        }
+
+        select::placeholder {
+            color: #888;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            font-size: 16px; /* Increased font size for buttons */
+            background-color: #55CC55; /* Light green background */
+            color: #000; /* Black text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #66DD66; /* Light green hover color */
+        }
+
+        .social-link {
+            color: #55CC55; /* Light green text color for links */
+            font-size: 18px;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #333;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 10px 0 0;
+        }
+
+        .centered {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="theme">
+            <img src="img/lololo.PNG" alt="Logo">
+        </div>
+
+        <p class="header">
+            "Hello and welcome to my website! I'm uk_yugey, and I'm thrilled to have you here. Whether you're exploring for information, inspiration, or simply curious, I hope you find exactly what you're looking for. Feel free to navigate, engage, and make the most of your visit. Thank you for stopping by!"
+        </p>
+
+        <div class="form">
+            <form onsubmit="return openConfirmation()">
+                <table>
+                    <tr>
+                        <td class="label">Name</td>
+                        <td><input type="text" placeholder="Enter your Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Gender</td>
+                        <td>
+                            <select>
+                                <option disabled selected value="" style="color: #888;">Your Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Age</td>
+                        <td><input type="number" placeholder="Enter your Age"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Contact</td>
+                        <td><input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" pattern="[0-9]{10}" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit"><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <center>
+            <p class="centered" style="font-size: 20px;">Contact With My Social Media Accounts</p>
+            <a class="social-link" href="https://twitter.com">Twitter</a>
+            <a class="social-link" href="https://instagram.com">Instagram</a>
+            <a class="social-link" href="mailto:uksos@gmail.com">G-mail</a>
+            <a class="social-link" href="yugey.js">Login</a>
+            <p class="centered" style="font-size: 18px;">Incomplete site</p>
+        </center>
+    </div>
+
+    <script>
+        function openConfirmation() {
+            alert("Thank you for your submission! Your information has been received by yugey.");
+            return true;
+        }
+    </script>
+</body>
+</html>
+<form action="submit.php" method="post" onsubmit="return openConfirmation()">
