@@ -203,3 +203,13 @@
 </body>
 </html>
 <form action="submit.php" method="post" onsubmit="return openConfirmation()">
+<?php
+if (isset($_GET["success"]) && $_GET["success"] == 1) {
+    echo '<div class="success-message">Thank you for your submission!</div>';
+}
+?>
+<?php
+if (isset($_GET["success"]) && $_GET["success"] == 1) {
+    echo '<div class="success-message">Thank you for your submission!</div>';
+}
+?>
